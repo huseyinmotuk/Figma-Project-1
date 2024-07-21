@@ -1,0 +1,26 @@
+.security-img {
+    margin-left: 5rem;
+}
+
+.security-box {
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+.security-text {
+    font-size: xx-large;
+}
+
+.security-items ul li {
+    margin-bottom: 1rem;
+}
+
+.security-items ul li::marker {
+    display: inline-block;
+    content: "☑️ ";
+
+}
+
+.security-p {
+    max-width: 75%;
+}

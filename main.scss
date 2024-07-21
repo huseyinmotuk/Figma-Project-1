@@ -1,0 +1,32 @@
+@use './buy-and-trade/buy-trade';
+@use './credit-cards/credit-cards';
+@use './get-started/get-started';
+@use './graphics/graphics';
+@use './graphics/coins-before';
+@use './graphics/arti-eksi';
+@use './header/header';
+@use './navbar/navbar';
+@use './partners/partner';
+@use './questions/questions';
+@use './security/security';
+@use './tools/tools';
+@use './mediaquery';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+.mybox {
+    animation: scaleUp 3s infinite;
+}
+
+@keyframes scaleUp {
+    50% {
+        transform: scale(1.25);
+    }
+}

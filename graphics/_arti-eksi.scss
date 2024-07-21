@@ -1,0 +1,17 @@
+@mixin position {
+    left: -7px;
+    display: inline-block;
+    position: relative;
+    margin-left: 1rem;
+}
+
+
+.pluss::before {
+    content: url(./graphics/icons/plus.png);
+    @include position
+}
+
+.eksi::before {
+    content: url(./graphics/icons/eksi.png);
+    @include position
+}

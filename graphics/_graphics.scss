@@ -1,0 +1,40 @@
+.three-items::before,
+.three-items::after {
+
+    z-index: 5;
+    align-self: stretch;
+    content: '';
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    margin: 0 2rem 0 2rem;
+}
+
+.three-items .flexbox-item:first-child {
+    order: -1;
+}
+
+.three-items .flexbox-item:last-child {
+    order: 1;
+}
+
+.trending::before {
+    content: "🔥";
+    display: inline-block;
+}
+
+.hr-line {
+    color: 1px solid black;
+    border-radius: 10%;
+    width: 100%;
+    margin: 0 0 1rem 0;
+}
+
+
+.gainers::before {
+    content: "🚀";
+    display: inline-block;
+}
+
+.recently::before {
+    content: "💎";
+    display: inline-block;
+}

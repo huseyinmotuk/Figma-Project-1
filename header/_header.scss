@@ -1,0 +1,46 @@
+.bgx {
+    background-color: #f5f4ff;
+}
+
+.yheader {
+    padding-bottom: 15rem;
+}
+
+.header-text-6::after {
+    content: url(../header/images/Star.png);
+    position: relative;
+    display: inline-block;
+    margin-left: 22rem;
+    top: 2rem;
+}
+
+.dwn,
+.str {
+    padding: 0.75rem 2.5rem;
+}
+
+.str:hover {
+    background-color: #f5fbfe;
+    color: blue;
+}
+
+.dwn {
+    background-color: #f5f4ff;
+    color: blue;
+}
+
+@mixin header-text {
+    background: -webkit-linear-gradient(rgb(6, 87, 179), rgb(34, 92, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-text-1 {
+    @include header-text;
+    font-weight: 800;
+
+}
+
+.header-text-6 {
+    @include header-text;
+}

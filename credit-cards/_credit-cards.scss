@@ -1,0 +1,37 @@
+.credit-items ul li {
+    margin-bottom: 1rem;
+}
+
+.credit-items ul li::marker {
+    display: inline-block;
+    content: "☑️ ";
+
+}
+
+.credit-box {
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+
+
+.credit-text {
+    font-size: xx-large;
+}
+
+@mixin header-text {
+    background: -webkit-linear-gradient(rgb(6, 87, 179), rgb(34, 92, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.header-text-1 {
+    @include header-text;
+    font-weight: 800;
+
+}
+
+.dwn {
+    background-color: #f5f4ff;
+    color: blue;
+}

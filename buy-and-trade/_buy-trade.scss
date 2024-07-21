@@ -1,0 +1,119 @@
+.buy-text {
+    font-size: xx-large;
+}
+
+@mixin coinbox {
+    background: -webkit-linear-gradient(rgb(6, 87, 179), rgb(34, 92, 226));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    margin: 1.2rem;
+
+}
+
+
+
+
+.para1 {
+    @include coinbox;
+
+    &:after {
+        align-self: stretch;
+        content: '';
+        border: 1px solid transparent;
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, rgb(6, 87, 179), rgb(18, 126, 173));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        margin: 1rem;
+    }
+
+}
+
+.para2 {
+
+    @include coinbox;
+
+    &:after {
+        align-self: stretch;
+        content: '';
+        border: 1px solid transparent;
+        background-image: linear-gradient(white, white),
+            linear-gradient(to right, rgb(6, 87, 179), rgb(18, 126, 173));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        margin: 1rem 1rem 1rem 3rem;
+
+    }
+}
+
+@mixin focus-decoration {
+    text-align: end;
+    padding: 1rem;
+    font-size: normal;
+    font-weight: 500;
+}
+
+@mixin place-decoration {
+    padding: 1rem;
+    font-size: normal;
+    font-weight: 500;
+    text-align: end !important;
+    position: relative;
+}
+
+@mixin input-decoration {
+    height: 4rem;
+    margin-bottom: 1rem;
+    outline: none;
+
+    border: double 3px transparent;
+    border-radius: 1rem;
+    background-image: linear-gradient(white, white),
+        linear-gradient(to right, rgb(25, 131, 212), rgb(43, 142, 185));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+.input-decoration {
+    text-align: end;
+    width: 18rem;
+    @include input-decoration;
+
+    &:focus {
+        @include focus-decoration;
+    }
+
+    &::placeholder {
+        @include place-decoration;
+    }
+
+}
+
+.input-decoration2 {
+    text-align: center !important;
+    width: 10rem;
+    @include input-decoration;
+
+    &::placeholder {
+        @include place-decoration;
+    }
+
+    &:focus {
+        @include focus-decoration;
+    }
+}
+
+
+
+
+
+.buy-box {
+    padding-left: 5rem;
+
+}
+
+.buy-btn {
+    width: 70%;
+    height: 3rem;
+}

@@ -1,0 +1,70 @@
+@mixin coins-position {
+    display: inline-block;
+    left: -5px;
+    top: 10px;
+    position: relative;
+}
+
+
+.btc::before {
+    content: url(./icon/btc.svg);
+
+    @include coins-position;
+
+}
+
+.eth::before {
+    content: url(./icon/eth.svg);
+    @include coins-position;
+
+}
+
+.solana::before {
+    content: url(./icon/sol.svg);
+    @include coins-position;
+}
+
+.doge::before {
+    content: url(./icon/doge.svg);
+    @include coins-position;
+}
+
+.pap::before {
+    content: url(./icon/pay.svg);
+    @include coins-position;
+}
+
+.btca::before {
+    content: url(./icon/btcd.svg);
+    @include coins-position;
+}
+
+.moon::before {
+    content: url(./icon/ryo.svg);
+    @include coins-position;
+}
+
+.ninja::before {
+    content: url(./icon/nio.png);
+    @include coins-position;
+}
+
+.meta::before {
+    content: url(./icon/mana.svg);
+    @include coins-position;
+}
+
+.frog::before {
+    content: url(./icon/fair.svg);
+    @include coins-position;
+}
+
+.musk::before {
+    content: url(./icon/mod.svg);
+    @include coins-position;
+}
+
+.share::before {
+    content: url(./icon/2give.svg);
+    @include coins-position;
+}
